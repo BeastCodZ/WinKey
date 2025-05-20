@@ -1,6 +1,6 @@
 # WinKey
 
-<img src="https://github.com/user-attachments/assets/6b5e0c5e-3a6f-400d-83d7-99f58be9999f" alt="WinKey Logo" width="48"/>
+<img src="https://github.com/user-attachments/assets/bced1892-14da-4a13-aecf-45e134a196ee" alt="WinKey Logo" width="48"/>
 
 > **Your slick, no-nonsense Electron 2FA Authenticator —**  
 > *because security shouldn’t be ugly or complicated.*
@@ -22,8 +22,10 @@ WinKey is an Electron-based Two-Factor Authentication (2FA) app designed to prov
 
 ## Peek the goods
 
-![Screenshot (282)](https://github.com/user-attachments/assets/ee11bd73-d5d4-412c-94a2-a2a6122acfb4)  
-![Screenshot (283)](https://github.com/user-attachments/assets/b80d3a6d-1478-4be0-90bb-9f892dd6eb7f)
+![Screenshot (282)](https://github.com/user-attachments/assets/ac216136-031c-4a3b-be29-533f0995beac)
+![Screenshot (283)](https://github.com/user-attachments/assets/d8561e4e-d710-430e-849d-05574fd42959)
+
+
 
 ---
 
