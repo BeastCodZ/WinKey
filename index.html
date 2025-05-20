@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>WinKey</title>
+  <link rel="icon" href="favicon.ico" />
+  <link href="https://fonts.googleapis.com/css2?family=Delius&display=swap" rel="stylesheet" />
+  <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="background-blur"></div>
+
+  <div id="title-bar">
+    <div class="logo">
+      <img src="favicon.ico" alt="Logo" />      
+    </div>
+    <button id="close-btn">
+      ✕
+    </button>
+  </div>
+
+  <main class="container">
+    <h1 class="app-title">WinKey</h1>
+    <div id="countdown-timer">00</div>
+
+    <ul id="code-list">
+    </ul>
+
+    <a href="add-code.html" class="add-btn">
+      <span>+</span>
+    </a>
+  </main>
+
+  <script src="renderer.js"></script>
+</body>
+</html>

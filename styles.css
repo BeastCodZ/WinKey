@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Delius&display=swap');
+
+body {
+  margin: 0;
+  font-family: 'Delius', cursive;
+  color: white;
+  background: transparent;
+  overflow: hidden;
+}
+
+.background-blur {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: url('https://images.unsplash.com/photo-1535463731090-e34f4b5098c5?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3') center center / cover no-repeat;
+  filter: blur(8px) brightness(0.7);
+  z-index: -1;
+}
+
+#title-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 20px;
+  background: rgba(255, 255, 255, 0.08);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+  -webkit-app-region: drag;
+}
+
+#title-bar .logo {
+  display: flex;
+  align-items: center;
+}
+
+#title-bar .logo img {
+  height: 32px;
+  margin-right: 10px;
+}
+
+#close-btn {
+  font-size: 20px;
+  color: white;
+  background: none;
+  border: none;
+  cursor: pointer;
+  -webkit-app-region: no-drag;
+}
+
+#close-btn:hover {
+  color: #ff5555;
+}
+
+.container {
+  padding: 30px 20px;
+  text-align: center;
+}
+
+.app-title {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+#countdown-timer {
+  font-size: 26px;
+  color: #00fffb;
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0% { opacity: 1; }
+  50% { opacity: 0.6; }
+  100% { opacity: 1; }
+}
+
+#code-list {
+  margin-top: 30px;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.1);
+  border-left: 4px solid #00FFCC;
+  border-radius: 12px;
+  list-style-type: none;
+  text-align: center;
+  max-height: 300px;
+  overflow-y: auto;
+}
+
+#code-list li {
+  padding: 10px;
+  margin: 5px 0;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 8px;
+  transition: background 0.3s ease;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+
+.add-btn {
+  display: inline-block;
+  margin-top: 10px;
+  width: 36px;
+  height: 36px;
+  background: rgba(0, 255, 204, 0.2);
+  border: 2px solid #00FFCC;
+  border-radius: 10px;
+  color: #00FFCC;
+  font-size: 22px;
+  line-height: 32px;
+  text-align: center;
+  text-decoration: none;
+  transition: background 0.2s ease;
+}
+
+.add-btn:hover {
+  background: rgba(0, 255, 204, 0.4);
+}
+
+.dbutton {
+  margin-left: 5px;
+  transition: color 0.2s ease;
+}
+.dbutton:hover {
+  color: rgba(255, 0, 0, 0.775);
+}
+.tokenclass {
+  color: #00FFCC;
+  cursor: pointer;
+}
+.colorwhite{
+  color: white;
+}

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Add New Code</title>
+    <link rel="icon" href="favicon.ico" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Delius&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link href="styles.css" rel="stylesheet" />
+    <link href="add-code.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="background-blur"></div>
+
+    <div id="title-bar">
+      <div class="logo">
+        <img src="favicon.ico" alt="Logo" />
+      </div>
+      <button id="close-btn">
+        ✕
+      </button>
+    </div>
+
+    <main class="container">
+      <h1 class="app-title">Add New Code</h1>
+      <form id="add-form" autocomplete="off">
+        <div class="form-group">
+          <label for="nickname" class="form-label">Nickname</label>
+          <input
+            type="text"
+            id="nickname"
+            class="form-control keybox"
+            placeholder="John Cena"
+            autofocus
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label for="secret" class="form-label">Secret Key</label>
+          <input
+            type="text"
+            id="secret"
+            class="form-control keybox"
+            placeholder="XXXXXXXXXXXXXXX"
+            required
+          />
+        </div>
+        <div id="error-message"></div>
+        <a
+          href="index.html"
+          class="add-btn"
+          id="back-btn"
+          style="margin-right: 10px;"
+        >
+          <span><i class="fa-solid fa-house"></i></span>
+        </a>
+        <button type="submit" class="add-btn" id="save-btn">
+          <span><i class="fa-solid fa-save"></i></span>
+        </button>
+      </form>
+    </main>
+
+    <script src="add-code.js"></script>
+  </body>
+</html>
