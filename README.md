@@ -34,7 +34,7 @@ WinKey is an Electron-based Two-Factor Authentication (2FA) app designed to prov
 - **No encryption on stored secrets.**  
   Handle your `secrets.json` like it’s gold. If someone gets it, they get your keys.  
   Find your secrets.json here:  
-  `C:\Users\BeastCodZ\AppData\Roaming\winkey`
+  `C:\Users\[Your Username]\AppData\Roaming\winkey`
 
 - **No auto backups.**  
   Manually back up your data or risk losing everything.
