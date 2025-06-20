@@ -1,0 +1,121 @@
+:root {
+    --primary-color: #FF5555;
+    --background-blur: rgba(30, 30, 30, 0.35);
+    --background-hover: rgba(255, 85, 85, 0.15);
+    --text-color: #fff;
+    --font-family: 'CaskaydiaCove Nerd Font', sans-serif;
+}
+
+body {
+    margin: 0;
+    font-family: var(--font-family);
+    color: var(--text-color);
+    background: transparent;
+    overflow: hidden;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.background-blur {
+    position: fixed;
+    inset: 0;
+    width: 100vw;
+    height: 100vh;
+    background: url('https://media.discordapp.net/attachments/1123623914304704613/1382025295422427356/TskHlPt.png?ex=6849a6db&is=6848555b&hm=a62de29c5579f8d5c704f16d385dcf9be7d5e72cd6a4922e55cc149c111d4ce1&') center center / cover no-repeat;
+    filter: blur(3px) brightness(1);
+    backdrop-filter: blur(2px) brightness(0.95);
+    z-index: -1;
+}
+
+#title-bar {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0.3125rem 0.3125rem;
+    -webkit-app-region: drag;
+}
+
+#close-btn,
+#sync-btn {
+    color: var(--text-color);
+    background: none;
+    border: none;
+    cursor: pointer;
+    -webkit-app-region: no-drag;
+    transition: color 0.2s, background 0.2s, box-shadow 0.2s;
+    padding: 0.25rem 0.75rem;
+    border-radius: 6px;
+    font-size: 1rem;
+}
+
+#close-btn:hover,
+#sync-btn:hover,
+#close-btn:focus-visible,
+#sync-btn:focus-visible {
+    color: var(--primary-color);
+    background: rgba(255, 85, 85, 0.08);
+    outline: none;
+}
+
+.container {
+    padding: 0.625rem 0.9375rem;
+    text-align: center;
+}
+
+.app-title {
+    font-size: 2rem;
+    letter-spacing: 0.02em;
+}
+
+.home-btn {
+    margin-top: 0.625rem;
+    color: var(--primary-color);
+    text-align: center;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.home-btn:hover,
+.home-btn:focus-visible {
+    color: var(--text-color);
+    outline: none;
+}
+
+.sync-menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    gap: 0.3125rem;
+}
+
+.sync-btn {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+    margin-bottom: 1rem;
+    width: 60vw;
+    max-width: 25rem;
+    min-width: 11.25rem;
+    padding: 1rem 0;
+    background: var(--background-blur);
+    border: none;
+    border-radius: 0.875rem;
+    color: var(--primary-color);
+    font-size: 1.2rem;
+    font-weight: 600;
+    box-shadow: 0 2px 12px 0 rgba(0,0,0,0.10);
+    cursor: pointer;
+    transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+}
+
+.sync-btn:hover,
+.sync-btn:focus-visible {
+    background: var(--background-hover);
+    color: var(--text-color);
+    box-shadow: 0 4px 18px 0 rgba(255,85,85,0.15);
+    outline: none;
+}

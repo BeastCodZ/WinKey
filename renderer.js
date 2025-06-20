@@ -1,3 +1,5 @@
+const icons = window.api.loadIcons ? window.api.loadIcons() : {};
+
 function loadSecrets() {
   return window.api.loadSecrets();
 }
@@ -27,8 +29,58 @@ function updateCodeList() {
 
     const token = window.api.generateTOTP(secret);
 
-    const nicknameSpan = document.createElement("span");
-    nicknameSpan.textContent = nickname;
+    const nicknameContainer = document.createElement("div");
+    nicknameContainer.style.display = "flex";
+    nicknameContainer.style.alignItems = "center";
+    nicknameContainer.style.gap = "10px";
+    nicknameContainer.style.position = "relative";
+
+    const hasIcon = icons && icons[nickname.toLowerCase()];
+
+    if (hasIcon) {
+      const iconImg = document.createElement("img");
+      iconImg.src = icons[nickname.toLowerCase()];
+      iconImg.alt = nickname;
+      iconImg.style.width = "28px";
+      iconImg.style.height = "28px";
+      iconImg.style.borderRadius = "6px";
+      iconImg.style.transition = "opacity 0.3s ease";
+      nicknameContainer.appendChild(iconImg);
+
+      const tooltip = document.createElement("div");
+      tooltip.textContent = nickname;
+      tooltip.style.position = "absolute";
+      tooltip.style.bottom = "120%";
+      tooltip.style.left = "50%";
+      tooltip.style.transform = "translateX(-50%)";
+      tooltip.style.backgroundColor = "#333";
+      tooltip.style.color = "#fff";
+      tooltip.style.padding = "4px 8px";
+      tooltip.style.borderRadius = "4px";
+      tooltip.style.fontSize = "12px";
+      tooltip.style.whiteSpace = "nowrap";
+      tooltip.style.opacity = "0";
+      tooltip.style.pointerEvents = "none";
+      tooltip.style.transition = "opacity 0.3s ease";
+      tooltip.style.zIndex = "1000";
+
+      nicknameContainer.appendChild(tooltip);
+
+      nicknameContainer.addEventListener("mouseenter", () => {
+        tooltip.style.opacity = "1";
+      });
+
+      nicknameContainer.addEventListener("mouseleave", () => {
+        tooltip.style.opacity = "0";
+      });
+    } else {
+      const nicknameText = document.createElement("span");
+      nicknameText.textContent = nickname;
+      nicknameText.className = "colorwhite";
+      nicknameContainer.appendChild(nicknameText);
+    }
+
+
 
     const tokenSpan = document.createElement("span");
     tokenSpan.className = "tokenclass";
@@ -65,9 +117,9 @@ function updateCodeList() {
         });
     });
 
-    listItem.appendChild(nicknameSpan);
+    listItem.appendChild(nicknameContainer);
     listItem.appendChild(tokenSpan);
-    tokenSpan.appendChild(delSpan);
+    listItem.appendChild(delSpan);
     codeList.appendChild(listItem);
   });
 }
@@ -107,3 +159,4 @@ autoUpdateTOTPs();
 document.getElementById("close-btn").addEventListener("click", () => {
   window.api.closeWindow();
 });
+

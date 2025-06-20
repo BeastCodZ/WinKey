@@ -1,0 +1,104 @@
+body {
+    margin: 0;
+    font-family: 'CaskaydiaCove Nerd Font';
+    color: white;
+    background: transparent;
+    overflow: hidden;
+}
+
+.background-blur {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: url('https://media.discordapp.net/attachments/1123623914304704613/1382025295422427356/TskHlPt.png?ex=6849a6db&is=6848555b&hm=a62de29c5579f8d5c704f16d385dcf9be7d5e72cd6a4922e55cc149c111d4ce1&') center center / cover no-repeat;
+    filter: blur(3px) brightness(1);
+    z-index: -1;
+}
+
+#title-bar {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    padding: 5px 5px;
+    -webkit-app-region: drag;
+}
+
+
+#close-btn {
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+
+    border-radius: 10px;
+    background: none;
+    border: none;
+    cursor: pointer;
+
+    -webkit-app-region: no-drag;
+    transition: all 0.2s ease;
+}
+
+#close-btn:hover {
+    color: #ff5555;
+}
+
+.container {
+    padding: 10px 15px;
+    text-align: center;
+}
+
+.app-title {
+    font-size: 32px;
+}
+
+.logins {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 24px;
+    height: 50vh;
+}
+
+.google-btn, .clear-btn {
+    transition: transform .3s;
+    background-color: rgba(0, 0, 0, 0.2);
+    padding: 12px 16px 12px 42px;
+    border: none;
+    border-radius: 12px;
+    box-shadow: 0 -1px 0 rgba(0, 0, 0, .04), 0 1px 1px rgba(0, 0, 0, .25);
+    color: #ff5555;
+    font-size: 14px;
+    font-weight: 500;
+    background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTgiIGhlaWdodD0iMTgiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGcgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIj48cGF0aCBkPSJNMTcuNiA5LjJsLS4xLTEuOEg5djMuNGg0LjhDMTMuNiAxMiAxMyAxMyAxMiAxMy42djIuMmgzYTguOCA4LjggMCAwIDAgMi42LTYuNnoiIGZpbGw9IiM0Mjg1RjQiIGZpbGwtcnVsZT0ibm9uemVybyIvPjxwYXRoIGQ9Ik05IDE4YzIuNCAwIDQuNS0uOCA2LTIuMmwtMy0yLjJhNS40IDUuNCAwIDAgMS04LTIuOUgxVjEzYTkgOSAwIDAgMCA4IDV6IiBmaWxsPSIjMzRBODUzIiBmaWxsLXJ1bGU9Im5vbnplcm8iLz48cGF0aCBkPSJNNCAxMC43YTUuNCA1LjQgMCAwIDEgMC0zLjRWNUgxYTkgOSAwIDAgMCAwIDhsMy0yLjN6IiBmaWxsPSIjRkJCQzA1IiBmaWxsLXJ1bGU9Im5vbnplcm8iLz48cGF0aCBkPSJNOSAzLjZjMS4zIDAgMi41LjQgMy40IDEuM0wxNSAyLjNBOSA5IDAgMCAwIDEgNWwzIDIuNGE1LjQgNS40IDAgMCAxIDUtMy43eiIgZmlsbD0iI0VBNDMzNSIgZmlsbC1ydWxlPSJub256ZXJvIi8+PHBhdGggZD0iTTAgMGgxOHYxOEgweiIvPjwvZz48L3N2Zz4=);
+    background-repeat: no-repeat;
+    background-position: 12px 11px;
+    background-size: 24px 24px;
+}
+.github-btn {
+    transition: transform .3s;
+    background-color: rgba(0, 0, 0, 0.2);
+    padding: 12px 16px 12px 42px;
+    border: none;
+    border-radius: 12px;
+    box-shadow: 0 -1px 0 rgba(0, 0, 0, .04), 0 1px 1px rgba(0, 0, 0, .25);
+    color: #888888;
+    font-size: 14px;
+    font-weight: 500;
+    background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPCEtLUxpY2Vuc2U6IEFwYWNoZS4gTWFkZSBieSBJY29uc2NvdXQ6IGh0dHBzOi8vZ2l0aHViLmNvbS9JY29uc2NvdXQvdW5pY29ucy0tPgo8c3ZnIGZpbGw9IiNGRkZGRkYiIHdpZHRoPSI4MDBweCIgaGVpZ2h0PSI4MDBweCIgdmlld0JveD0iMCAwIDI0IDI0IiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGRhdGEtbmFtZT0iTGF5ZXIgMSI+CiAgPHBhdGggZD0iTTEyLDIuMjQ2N0ExMC4wMDA0MiwxMC4wMDA0MiwwLDAsMCw4LjgzNzUyLDIxLjczNDE5Yy41LjA4NzUyLjY4NzUtLjIxMjQ3LjY4NzUtLjQ3NSwwLS4yMzc0OS0uMDEyNTEtMS4wMjUtLjAxMjUxLTEuODYyNDlDNywxOS44NTkxOSw2LjM1LDE4Ljc4NDIzLDYuMTUsMTguMjIxNzNBMy42MzYsMy42MzYsMCwwLDAsNS4xMjUsMTYuODA5MmMtLjM1LS4xODc1LS44NS0uNjUtLjAxMjUxLS42NjI0OEEyLjAwMTE3LDIuMDAxMTcsMCwwLDEsNi42NSwxNy4xNzE2OWEyLjEzNzQyLDIuMTM3NDIsMCwwLDAsMi45MTI0OC44MjVBMi4xMDM3NiwyLjEwMzc2LDAsMCwxLDEwLjIsMTYuNjU5MjNjLTIuMjI1LS4yNS00LjU1LTEuMTEyNTQtNC41NS00LjkzNzVhMy44OTE4NywzLjg5MTg3LDAsMCwxLDEuMDI1LTIuNjg3NSwzLjU5MzczLDMuNTkzNzMsMCwwLDEsLjEtMi42NXMuODM3NDctLjI2MjUxLDIuNzUsMS4wMjVhOS40Mjc0Nyw5LjQyNzQ3LDAsMCwxLDUsMGMxLjkxMjQ4LTEuMywyLjc1LTEuMDI1LDIuNzUtMS4wMjVhMy41OTMyMywzLjU5MzIzLDAsMCwxLC4xLDIuNjUsMy44NjksMy44NjksMCwwLDEsMS4wMjUsMi42ODc1YzAsMy44Mzc0Ny0yLjMzNzUyLDQuNjg3NS00LjU2MjUsNC45Mzc1YTIuMzY4MTQsMi4zNjgxNCwwLDAsMSwuNjc1LDEuODVjMCwxLjMzNzUyLS4wMTI1MSwyLjQxMjQ4LS4wMTI1MSwyLjc1LDAsLjI2MjUxLjE4NzUuNTc1LjY4NzUuNDc1QTEwLjAwNTMsMTAuMDA1MywwLDAsMCwxMiwyLjI0NjdaIi8+Cjwvc3ZnPgo=');
+    background-repeat: no-repeat;
+    background-position: 12px 11px;
+    background-size: 24px 24px;
+    opacity: 0.5;
+    pointer-events: none;
+    cursor: not-allowed;
+}
+.clear-btn{
+    background-image: "data:image/svg+xml,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22utf-8%22%3F%3E%3C!--%20License%3A%20PD.%20Made%20by%20icons8%3A%20https%3A%2F%2Fgithub.com%2Ficons8%2Fwindows-10-icons%20--%3E%3Csvg%20version%3D%221.1%22%20id%3D%22Layer_1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20%20viewBox%3D%220%200%2032%2032%22%20enable-background%3D%22new%200%200%2032%2032%22%20xml%3Aspace%3D%22preserve%22%3E%3Cpath%20fill%3D%22none%22%20stroke%3D%22%23000000%22%20stroke-width%3D%222%22%20stroke-miterlimit%3D%2210%22%20d%3D%22M23%2C27H11c-1.1%2C0-2-0.9-2-2V8h16v17C25%2C26.1%2C24.1%2C27%2C23%2C27z%22%2F%3E%3Cline%20fill%3D%22none%22%20stroke%3D%22%23000000%22%20stroke-width%3D%222%22%20stroke-miterlimit%3D%2210%22%20x1%3D%2227%22%20y1%3D%228%22%20x2%3D%227%22%20y2%3D%228%22%2F%3E%3Cpath%20fill%3D%22none%22%20stroke%3D%22%23000000%22%20stroke-width%3D%222%22%20stroke-miterlimit%3D%2210%22%20d%3D%22M14%2C8V6c0-0.6%2C0.4-1%2C1-1h4c0.6%2C0%2C1%2C0.4%2C1%2C1v2%22%2F%3E%3Cline%20fill%3D%22none%22%20stroke%3D%22%23000000%22%20stroke-width%3D%222%22%20stroke-miterlimit%3D%2210%22%20x1%3D%2217%22%20y1%3D%2223%22%20x2%3D%2217%22%20y2%3D%2212%22%2F%3E%3Cline%20fill%3D%22none%22%20stroke%3D%22%23000000%22%20stroke-width%3D%222%22%20stroke-miterlimit%3D%2210%22%20x1%3D%2221%22%20y1%3D%2223%22%20x2%3D%2221%22%20y2%3D%2212%22%2F%3E%3Cline%20fill%3D%22none%22%20stroke%3D%22%23000000%22%20stroke-width%3D%222%22%20stroke-miterlimit%3D%2210%22%20x1%3D%2213%22%20y1%3D%2223%22%20x2%3D%2213%22%20y2%3D%2212%22%2F%3E%3C%2Fsvg%3E";
+}
+.google-btn:hover {
+    transform: scale(1.2);
+    cursor: pointer;
+}

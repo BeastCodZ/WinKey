@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>WinKey</title>
+  <link rel="icon" href="favicon.ico" />
+  <link href="https://fonts.googleapis.com/css2?family=Delius&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+  <link rel="stylesheet" href="sync.css" />
+</head>
+<body>
+  <div class="background-blur"></div>
+
+  <div id="title-bar">
+    <button id="close-btn" aria-label="Close">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M18 6 6 18"/>
+        <path d="m6 6 12 12"/>
+      </svg>
+    </button>
+  </div>
+
+  <main class="container">
+    <h1 class="app-title">WinKey</h1>
+    <div class="sync-menu">
+      <button class="sync-btn" id="sync-from">
+        <i class="fas fa-download" style="color: #FF5555; font-size: 1.5em; vertical-align: middle;"></i>
+        <span style="margin-left: 8px;">Sync <strong>from</strong> Google Drive</span>
+      </button>
+      <button class="sync-btn" id="sync-to">
+        <i class="fas fa-upload" style="color: #FF4444; font-size: 1.5em; vertical-align: middle;"></i>
+        <span style="margin-left: 8px;">Sync <strong>to</strong> Google Drive</span>
+      </button>
+    </div>
+    <a href="index.html" class="home-btn" aria-label="Home">
+      <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M3 9.5L12 4l9 5.5V20a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V9.5z"/>
+        <polyline points="9 22 9 12 15 12 15 22"/>
+      </svg>
+    </a>
+  </main>
+</body>
+<script src="sync.js"></script>
+</html>

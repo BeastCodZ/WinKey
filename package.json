@@ -6,20 +6,32 @@
     "start": "electron .",
     "build": "electron-builder"
   },
-  "keywords": ["Authenticator", "2FA", "MFA", "OTP", "TOTP"],
+  "keywords": [
+    "Authenticator",
+    "2FA",
+    "MFA",
+    "OTP",
+    "TOTP"
+  ],
   "author": "BeastCodZ",
   "homepage": "https://github.com/BeastCodZ/WinKey",
   "license": "ISC",
   "description": "A Electron based 2FA Authenticator with TOTP support. It is designed to be a aesthethic and easy-to-use application for generating one-time passwords for two-factor authentication.",
   "devDependencies": {
-    "electron": "^32.0.2",
+    "electron": "^32.3.3",
     "electron-builder": "^25.0.5"
   },
   "dependencies": {
+    "@getstation/electron-google-oauth2": "^14.0.0",
+    "axios": "^1.10.0",
     "bcrypt": "^5.1.1",
     "bootstrap": "^5.3.3",
     "cors": "^2.8.5",
+    "date-fns": "^4.1.0",
+    "electron-google-oauth": "^2.0.0",
+    "electron-store": "^10.1.0",
     "express": "^4.21.0",
+    "googleapis": "^150.0.1",
     "jsonwebtoken": "^9.0.2",
     "mongodb": "^6.9.0",
     "mongoose": "^8.6.3",
