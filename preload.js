@@ -3,21 +3,16 @@ const fs = require('fs');
 const path = require('path');
 const otplib = require("otplib");
 
-// 🗝️ 1) Get user data path correctly:
 const userDataPath = ipcRenderer.sendSync('get-user-data-path');
 
-// 🗝️ 2) Resolve secrets.json properly:
 const secretsFile = path.resolve(userDataPath, 'secrets.json');
 
 const iconsFile = path.resolve(__dirname, 'icons.json'); // adjust if needed
 
-
-// 🗝️ 3) Make sure file exists:
 if (!fs.existsSync(secretsFile)) {
   fs.writeFileSync(secretsFile, '[]', 'utf-8');
 }
 
-// 🗝️ 4) Expose safe API:
 contextBridge.exposeInMainWorld('api', {
   closeWindow: () => ipcRenderer.send('close-window'),
   loginGoogle: () => ipcRenderer.send('start-google-login'),
