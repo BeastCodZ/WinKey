@@ -13,19 +13,32 @@ WinKey is an Electron-based Two-Factor Authentication (2FA) app designed to prov
 
 ---
 
-## Features that matter
+## ✨ What’s New in v2
+  - **✅ Google Drive Sync** — backup & restore your secrets with a click.
+  - **✅ Improved UI** — more aesthetic, smoother interaction.
+  - **✅ Basic backup system** — local and remote backups before overwriting.
+  - **⚙️ Clean multi-user codebase (experimental)** — prepping for multiple accounts.
 
-- **TOTP generation adhering to RFC 6238** — reliable, standard, secure.  
-- **Easy to build & run** using Electron Builder.
+## 🚧 Roadmap / Coming Soon
+
+- 🔐 Encryption for stored secrets — so your secrets.json is useless to thieves.
+- 🔑 bcrypt — hashed local passwords to guard your local database.
+- 🧩 GitHub login option — log in with your GitHub account.
+- 👥 Fully-fledged multi-account login — switch between different cloud accounts seamlessly.
 
 ---
 
 ## Peek the goods
 
-![Screenshot (282)](https://github.com/user-attachments/assets/ac216136-031c-4a3b-be29-533f0995beac)
-![Screenshot (283)](https://github.com/user-attachments/assets/d8561e4e-d710-430e-849d-05574fd42959)
+![Login Screen](https://github.com/user-attachments/assets/3cb387f6-6f02-4699-960a-ce88b66f8560)
+![Dashboard](https://github.com/user-attachments/assets/fcd9e253-7e69-44fc-8136-22842d162beb)
+![Add Code Screen](https://github.com/user-attachments/assets/7c69616c-daa7-423b-b8ce-62765bc731c3)
+![Sync Menu](https://github.com/user-attachments/assets/881e051a-a088-4177-b4a0-eb93c309504c)
 
-
+## ⚡ Features that matters
+- RFC 6238 TOTP generation — trusted, time-based codes.
+- Simple Electron Builder setup — clone, build, run.
+- Google Drive Integration — secure cloud backup in your own cloud we manual backups.
 
 ---
 
@@ -37,9 +50,7 @@ WinKey is an Electron-based Two-Factor Authentication (2FA) app designed to prov
   `C:\Users\[Your Username]\AppData\Roaming\winkey`
 
 - **No auto backups.**  
-  Manually back up your data or risk losing everything.
-
-- **Platform quirks** may appear — Linux distros and macOS aren’t always friends with Electron.
+  Make sure to sync manually for now. Automatic backup in V3.
 
 ---
 
@@ -60,8 +71,8 @@ ISC License © BeastCodZ
 
 ## Disclaimer
 
-*WinKey is a personal project and comes as-is. Don’t trust it blindly with your crown jewels.*
+*WinKey is a personal project and comes as-is. Don’t trust it blindly with your crown jewels. — I’m not your IT department.*
 
 ---
 
-> **Secure your digital life with style — use WinKey.**
+> **Lock down your accounts with taste. Use WinKey.**
