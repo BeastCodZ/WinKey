@@ -2,29 +2,29 @@
 
 <img src="https://github.com/user-attachments/assets/bced1892-14da-4a13-aecf-45e134a196ee" alt="WinKey Logo" width="48"/>
 
-> **Your slick, no-nonsense Electron 2FA Authenticator —**  
+> **Your slick, Yours Truly, Winkey —**  
 > *because security shouldn’t be ugly or complicated.*
 
 ---
 
 ## What is WinKey?
 
-WinKey is an Electron-based Two-Factor Authentication (2FA) app designed to provide a clean, aesthetic, and easy-to-use experience for generating Time-based One-Time Passwords (TOTP). This lightweight desktop authenticator simplifies the process of securing your online accounts with an elegant interface and reliable token generation.
+WinKey is an Electron based Two-Factor Authentication (2FA) app designed to provide a clean, aesthetic, and easy to use experience for generating Time-based One-Time Passwords (TOTP). This lightweight desktop authenticator simplifies the process of securing your online accounts with an elegant interface and reliable token generation.
 
 ---
 
 ## ✨ What’s New in v2
-  - **✅ Google Drive Sync** — backup & restore your secrets with a click.
-  - **✅ Improved UI** — more aesthetic, smoother interaction.
-  - **✅ Basic backup system** — local and remote backups before overwriting.
-  - **⚙️ Clean multi-user codebase (experimental)** — prepping for multiple accounts.
+  - **Google Drive Sync** — backup & restore your secrets with a click.
+  - **Improved UI** — more aesthetic, smoother interaction.
+  - **Basic backup system** — local and remote backups before overwriting.
+  - **Clean multi-user codebase (experimental)** — prepping for multiple accounts.
 
 ## 🚧 Roadmap / Coming Soon
 
-- 🔐 Encryption for stored secrets — so your secrets.json is useless to thieves.
-- 🔑 bcrypt — hashed local passwords to guard your local database.
-- 🧩 GitHub login option — log in with your GitHub account.
-- 👥 Fully-fledged multi-account login — switch between different cloud accounts seamlessly.
+- Encryption for stored secrets — so your secrets.json is useless to thieves.
+- bcrypt — hashed local passwords to guard your local database.
+- GitHub login option — log in with your GitHub account.
+- Fully-fledged multi-account login — switch between different cloud accounts seamlessly.
 
 ---
 
@@ -56,10 +56,10 @@ WinKey is an Electron-based Two-Factor Authentication (2FA) app designed to prov
 
 ## Tech stack & toolkit
 
-- **Electron** v32 — power your desktop app with web tech  
-- **bcrypt** — hashed passwords (To be implemented soon)  
-- **otplib** — TOTP engine  
-- **qrcode** — instant QR code generation (To be implemented soon)
+- **Electron**  — power your desktop app with web tech  
+- **otplib**    — TOTP engine
+- **bcrypt**    — hashed passwords (To be implemented soon)  
+- **qrcode**    — instant QR code generation (To be implemented soon)
 
 ---
 
@@ -71,7 +71,7 @@ ISC License © BeastCodZ
 
 ## Disclaimer
 
-*WinKey is a personal project and comes as-is. Don’t trust it blindly with your crown jewels. — I’m not your IT department.*
+*WinKey is a personal project and comes as is. Feel free to drop a issue, pull request. Don’t trust software over the internet blindly with your crown jewels.*
 
 ---
 
